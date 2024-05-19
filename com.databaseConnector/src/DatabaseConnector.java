@@ -1,5 +1,6 @@
 import java.sql.*;
 public class DatabaseConnector {
+
     private Connection connection;
     private QueryResult currentQueryResult = null;
     private String message = null;

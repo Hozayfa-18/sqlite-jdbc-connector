@@ -5,7 +5,6 @@ public class DatabaseTest {
 
     public static void main(String[] args) {
         DatabaseConnector con = new DatabaseConnector("",0,"einkaufsdb.db","","");
-
         con.executeStatement("select produkt, menge,kk,mm from einkaufsliste;");
         QueryResult res = con.getCurrentQueryResult();
         System.out.println(res);
